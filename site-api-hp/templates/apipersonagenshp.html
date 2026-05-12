@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h1 class="my-4">Consumindo API Harry Potter no Flask</h1>
+<h2>Personagens da Franquia</h2>
+<div class="row">
+    
+    {% for pessoa in pessoas %}
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{pessoa.name}}</h5>
+                <img src="{{pessoa.image if pessoa.image else 'https://via.placeholder.com/150'}}" style="width:auto; height:250px; object-fit: cover; align-items: center;" class="my-3">
+                <p class="card-text"><strong>Casa:</strong> {{pessoa.house}}</p>
+                <p class="card-text"><strong>Vivo:</strong> {{pessoa.alive}}</p>
+                <p class="card-text"><strong>Nascimento:</strong> {{pessoa.dateOfBirth}}</p>
+                <p class="card-text"><strong>Ator:</strong> {{pessoa.actor}}</p>
+                <p class="card-text"><strong>Patrono:</strong> {{pessoa.patronus if pessoa.patronus else 'Não informado'}}</p>
+            </div>
+        </div>
+    </div> 
+    {% endfor %}
+</div>
+{% endblock conteudo %}
