@@ -1,0 +1,57 @@
+body{
+    background-image: url('fundobase.jpg'); 
+    
+    background-size: cover;           
+    background-position: center;      
+    background-repeat: no-repeat;     
+    background-attachment: fixed;     
+    min-height: 100vh;              
+    margin: 10%;
+}
+
+.btn {
+    background-color: rgb(145, 0, 0);
+    color: white;
+    font-size: larger;
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
+    margin: 1%;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+.ini {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+hr {
+    color: white;
+    box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
+}
+
+.btn:hover {
+    background-color: #ae0001;
+    color: #ecbc4a;
+}
+
+.card {
+    align-items: center;
+    background-color: rgb(212, 147, 93);
+    width: 100%;
+    padding: 7%;
+}
+
+
+
